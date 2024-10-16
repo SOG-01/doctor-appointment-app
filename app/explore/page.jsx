@@ -72,7 +72,7 @@ const MapLandingPage = () => {
       </main>
 
       <footer className="bg-blue-600 text-white py-8 text-center">
-        <p>&copy; {new Date().getFullYear()} HealthMap. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} CLINICO. All rights reserved.</p>
       </footer>
 
       <style jsx>{`

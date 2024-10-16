@@ -28,10 +28,10 @@ export default function Home() {
         <Hero/>
 
         {/* Search bar + Categories  */}
-        <CategorySearch/>
+        {/* <CategorySearch/> */}
 
         {/* Popular Doctor List  */}
-        <DoctorList doctorList={doctorList}/>
+        {/* <DoctorList doctorList={doctorList}/> */}
     </div>
     </>
   );
