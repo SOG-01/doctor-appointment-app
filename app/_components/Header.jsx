@@ -26,7 +26,7 @@ function Header() {
         {
             id:3,
             name:'Contact Us',
-            path:'/'
+            path:'/contact'
         },
     ]
 
