@@ -1,11 +1,12 @@
 "use client"
 
 import Hero from "./_components/Hero";
-// import CategorySearch from "./_components/CategorySearch";
-// import DoctorList from "./_components/DoctorList";
+ import CategorySearch from "./_components/CategorySearch";
+import DoctorList from "./_components/DoctorList";
 import GlobalApi from "./_utils/GlobalApi";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import {  useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs'
 
 export default function Home() {
 
@@ -19,13 +20,22 @@ export default function Home() {
       setDoctorList(resp.data.data);
     })
   }
+  const {user} = useKindeBrowserClient();
   return (
     <>
    <Link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg"/>
 <Link rel="icon" type="image/png" href="/assets/images/favicon.png"/>
     <div>
         {/* Hero Section  */}
+
+{user?
+<div>
+ <CategorySearch/>
+ <DoctorList doctorList={doctorList}/>
+</div>
+:
         <Hero/>
+}
 
         {/* Search bar + Categories  */}
         {/* <CategorySearch/> */}

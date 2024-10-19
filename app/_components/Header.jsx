@@ -16,7 +16,7 @@ function Header() {
         {
             id:1,
             name:'Home',
-            path:'/Home'
+            path:'/'
         },
         {
             id:2,
