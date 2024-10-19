@@ -40,7 +40,7 @@ function Header() {
     justify-between p-4 shadow-sm'>
         <div className='flex items-center gap-10'>
           {/* logopisum logo */}
-          <div className='text-blue-500 text-4xl'>CLINICO</div>
+          <div className='text-blue-500 text-4xl'>(NEW NAME)</div>
             {/* <Image src='/logo.svg' alt='logo'
             width={180} height={80}
             /> */}
