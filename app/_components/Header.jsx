@@ -16,7 +16,7 @@ function Header() {
         {
             id:1,
             name:'Home',
-            path:'/'
+            path:'/Home'
         },
         {
             id:2,
@@ -56,7 +56,7 @@ function Header() {
             </ul>
             :
             <div>
-                
+
             </div>
 }
         </div>
