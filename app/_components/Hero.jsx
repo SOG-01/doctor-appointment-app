@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -51,7 +52,9 @@ function Hero() {
         <p className="mt-4 text-gray-500">
           We've integrated an interactive map feature into the Clinico app, making it easier than ever to find your nearest clinic's location. With real-time directions and the ability to view nearby clinics, our app helps ensure you reach your appointment on time without any hassle. No more worrying about getting lost—our map guides you every step of the way.
         </p>
+        <Link href={"./explore"}>
         <Button className="mt-10">Try the Map Feature</Button>
+        </Link>
       </div>
     </div>
   </div>

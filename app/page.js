@@ -1,8 +1,8 @@
 "use client"
 
 import Hero from "./_components/Hero";
-import CategorySearch from "./_components/CategorySearch";
-import DoctorList from "./_components/DoctorList";
+// import CategorySearch from "./_components/CategorySearch";
+// import DoctorList from "./_components/DoctorList";
 import GlobalApi from "./_utils/GlobalApi";
 import { useEffect, useState } from "react";
 import Link from "next/link";

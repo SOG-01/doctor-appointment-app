@@ -44,6 +44,7 @@ function Header() {
             {/* <Image src='/logo.svg' alt='logo'
             width={180} height={80}
             /> */}
+            {user?
             <ul className='md:flex gap-8 hidden'>
                 {Menu.map((item,index)=>(
                     <Link href={item.path} key={index}>
@@ -53,6 +54,11 @@ function Header() {
                     </Link>
                 ))}
             </ul>
+            :
+            <div>
+                
+            </div>
+}
         </div>
    
        {user?
