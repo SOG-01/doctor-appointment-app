@@ -7,7 +7,7 @@ import { Toaster } from "sonner";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Clinico",
+  title: "ClinicPro",
   description: "Get best medical help",
 };
 
