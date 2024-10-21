@@ -7,7 +7,7 @@ import L from 'leaflet';
 // Set up custom icons
 const customMarker = new L.Icon({
   iconUrl: "/leaflet-icons/clinicIcon.svg", 
-  iconSize: [25, 41],
+  iconSize: [250, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
   shadowSize: [41, 41],
@@ -82,7 +82,7 @@ export default function ClinicMap() {
 
       {/* Clinic Markers */}
       {clinics.map((clinic) => (
-        <Marker key={clinic.id} position={[clinic.lat, clinic.lng]} icon={customMarker}>
+        <Marker key={clinic.id} position={[clinic.lat, clinic.lng]} icon={customMarker} className=" w-[130px] h-[120px]">
           <Popup>
             <div>
               <h3>{clinic.name}</h3>
