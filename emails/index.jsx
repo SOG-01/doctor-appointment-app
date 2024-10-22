@@ -37,7 +37,7 @@ import {
             src={`${baseUrl}/logo.svg`}
             width="170"
             height="50"
-            alt="Koala"
+            alt="logo"
             style={logo}
           />
           <Text style={paragraph}>Hi {UserName},</Text>
@@ -52,7 +52,7 @@ import {
           <Text style={paragraph}>
             Best,
             <br />
-            Clinco App 
+            Clinc PRO 
           </Text>
           <Hr style={hr} />
           <Text style={footer}>

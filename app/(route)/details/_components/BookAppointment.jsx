@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button'
 import { Calendar } from "@/components/ui/calendar"
 import { CalendarDays, Clock } from 'lucide-react'
 import { Textarea } from '@/components/ui/textarea'
-import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs'
+import { useKindeBrowserClient, getToken } from '@kinde-oss/kinde-auth-nextjs'
 import GlobalApi from '@/app/_utils/GlobalApi'
 import { toast } from 'sonner'
 
@@ -50,6 +50,7 @@ function BookAppointment({doctor}) {
     }
 
     const saveBooking=()=>{
+      const token = user?.access_token;
       const data={
         data:{
           UserName:user.given_name+" "+user.family_name,
@@ -61,7 +62,7 @@ function BookAppointment({doctor}) {
         }
       }
       // console.log(data)
-      GlobalApi.bookAppointment(data).then(resp=>{
+      GlobalApi.bookAppointment(data, token).then(resp=>{
         console.log(resp);
         if(resp)
         {
